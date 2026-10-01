@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AI Nutrition & Fitness App</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>AI Nutrition & Fitness App</h1>
+		<div class="tabs">
+			<button class="tab-btn active" data-tab="food-analysis">Food Analysis</button>
+			<button class="tab-btn" data-tab="diet-plan">Daily Diet Plan</button>
+			<button class="tab-btn" data-tab="workout-plan">Workout Plan</button>
+		</div>
+		<div class="tab-content" id="food-analysis">
+			<h2>AI Photo Nutrition Analyzer</h2>
+			<input type="file" id="food-photo" accept="image/*">
+			<button id="analyze-btn">Analyze Photo</button>
+			<div id="food-result" class="result-box"></div>
+		</div>
+		<div class="tab-content" id="diet-plan" style="display:none;">
+			<h2>Daily Diet Plan</h2>
+			<button id="generate-diet">Generate Diet Plan</button>
+			<div id="diet-result" class="result-box"></div>
+		</div>
+		<div class="tab-content" id="workout-plan" style="display:none;">
+			<h2>Workout Plan</h2>
+			<button id="generate-workout">Generate Workout Plan</button>
+			<div id="workout-result" class="result-box"></div>
+		</div>
+	</div>
+	<script src="index.js"></script>
+</body>
+</html>
